@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Thông Tin Live Tiktok</title>
+
+    <meta name="description" content="Đọc thông tin live bao gồm comment, tim và quà kim cương">
+    <meta name="keywords" content="TikTok,Live,Livestream,Chat,Reader,Scraper,Tracker,tiktok.com,broadcast,api,library,node,node.js,javascript">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="connection.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="head">
+        <h1>TikTok LIVE CHAT</h1>
+        <span class="subTitle">Source: <a href="https://ditucogivui.us">https://ditucogivui.us</a></span>      
+    </div>
+
+    <div>
+        Chat lấy nguồn tại <a href="https://www.tiktok.com/live">TikTok LIVE</a> Code sửa đổi tại tiktok <a href="https://tiktok.com/@ditucogivui">Đi tù có gì vui</a> 
+    </div>
+
+    <div class="inputFields">
+        <p>Tên người live <b>@username</b> Gõ vào ô trống:</p>
+        <input type="text" id="uniqueIdInput">
+        <input type="button" id="connectButton" value="connect">
+    </div>
+
+    <table class="splitstatetable">
+        <tr>
+            <td>
+                <pre id="stateText"></pre>
+            </td>
+            <td>
+                <div id="roomStats"></div>
+            </td>
+        </tr>
+    </table>
+
+    <table class="splitchattable">
+        <tr>
+            <td>
+                <div class="chatcontainer">
+                    <h3 class="containerheader">NỘI DUNG CHAT</h3>
+                </div>
+            </td>
+            <td>
+                <div class="giftcontainer">
+                    <h3 class="containerheader">QUÀ</h3>
+                </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
